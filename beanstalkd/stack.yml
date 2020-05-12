@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  database:
+    image: schickling/beanstalkd:latest
+    ports:
+      - 11300:11300
+    volumes:
+      - ./volume:/data
