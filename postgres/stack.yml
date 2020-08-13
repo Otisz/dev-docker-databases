@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  database:
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    volumes:
+      - ./volume:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: 123
