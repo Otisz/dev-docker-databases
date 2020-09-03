@@ -17,7 +17,6 @@ fi
 echo ""
 read -p "Pull? " -n 1 -r
 echo ""
-echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 	docker pull schickling/beanstalkd:latest
@@ -27,7 +26,6 @@ fi
 
 echo ""
 read -p "Deploy? " -n 1 -r
-echo ""
 echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
